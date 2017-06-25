@@ -14,3 +14,14 @@ Reminder for BreakTime !!
   
 ## Supported OS :
 * Window
+
+## Flow of Program :
+1. Check for system status (lock or unlock) on every SYSTEM_CHECK_INTERVAL
+2. Pop-up notification on every SYSTEM_LOCK_THRESHOLD_LIST(times SYSTEM_CHECK_INTERVAL) interval
+3. It is possible ignore upto last notification from SYSTEM_LOCK_THRESHOLD_LIST, then system should be lock for BREAKTIME(times SYSTEM_CHECK_INTERVAL) interval 
+4. If system will unlocked before BREAKTIME(times SYSTEM_CHECK_INTERVAL) interval then it will pop-up notification to lock system (step 2)
+5. For locked system, Checking interval will reduce by SYSTEM_LOCKED_REDUCED_THRESHOLD factor, after SYSTEM_LOCKED_REDUCED_THRESHOLD(times SYSTEM_CHECK_INTERVAL) interval
+
+## Screenshots :
+![Screenshot First](images/BreakTime_Notification_First.png)
+![Screenshot Last](images/BreakTime_Notification_Last.png)
