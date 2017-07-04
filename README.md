@@ -20,8 +20,8 @@ Reminder for BreakTime !!
 ## Flow of Program :
 1. Check for system status (lock or unlock) on every SYSTEM_CHECK_INTERVAL
 2. Pop-up notification on every SYSTEM_LOCK_THRESHOLD_LIST interval
-3. It is possible to ignore upto last notification from SYSTEM_LOCK_THRESHOLD_LIST, then system should be lock for BREAKTIME interval 
-4. If system will unlocked before BREAKTIME interval then it will pop-up notification to lock system (step 2)
+3. It is possible to ignore up to last notification from SYSTEM_LOCK_THRESHOLD_LIST, then system should be lock for BREAKTIME interval 
+4. If system will be unlocked before BREAKTIME interval then it will pop-up notification to lock system (step 2)
 5. For locked system, Checking interval will reduce by SYSTEM_LOCKED_REDUCED_THRESHOLD factor, after SYSTEM_LOCKED_REDUCED_THRESHOLD interval
 
 ## Screenshots :
